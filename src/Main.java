@@ -2,9 +2,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        //değişkenlerin tanımı
         double pear=2.14, tomatoes=1.11, apple=3.67, banana=0.95,aubergine=5.00, total,pearkilo, applekilo, tomatokilo,bananakilo,auberkilo;
 
-        Scanner input=new Scanner(System.in);
+        Scanner input=new Scanner(System.in);  //Kullanıcıdan kilo bilgilerini alıyoruz
 
         System.out.print("Armut kaç kilo: " );
         pearkilo=input.nextDouble();
@@ -17,13 +18,13 @@ public class Main {
 
         System.out.print("Muz kaç kilo: " );
         bananakilo=input.nextDouble();
-        
+
         System.out.print("Patlican kaç kilo: " );
         auberkilo=input.nextDouble();
 
 
-        total=(pearkilo*pear)+(applekilo*apple)+(tomatokilo*tomatoes)+(bananakilo*banana)+(auberkilo*aubergine);
-        System.out.println("Toplam Tıtarınız : "+total+" TL");
+        total=(pearkilo*pear)+(applekilo*apple)+(tomatokilo*tomatoes)+(bananakilo*banana)+(auberkilo*aubergine); //Girilen kilolar ile alınan malzemelerin fiyat işlemi yapıldı.
+        System.out.println("Toplam Tıtarınız : "+total+" TL"); //Toplam fiyatı ekrana yazdırdık.
 
     }
 }
